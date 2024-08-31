@@ -1,6 +1,6 @@
 import { ReactNode } from "react"
 import styles from "./App.module.css"
-import { ChartBarWidget } from "./components/widgets/ChartBarWidget/ChartBarWidget"
+import { ChartBarWidget } from "./widgets/ChartBarWidget/ChartBarWidget"
 
 function App(): ReactNode {
     return (
