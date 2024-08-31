@@ -9,7 +9,7 @@ export const BarChart = ({
     className,
     data,
     colorOfRectangle = "steelblue",
-    decsending = true,
+    ascending = false,
     width = 928,
     height = 500,
     marginTop = 30,
@@ -26,7 +26,7 @@ export const BarChart = ({
 
     useEffect(() => {
         /*
-      Эффект для конструирования и настройки svg элемента
+      Эффект для конструирования и настройки svg элемента (без зума)
   */
 
         // Clear the SVG container
@@ -38,7 +38,7 @@ export const BarChart = ({
             .domain(
                 d3.groupSort(
                     data,
-                    ([d]) => (decsending ? -d.y_value : d.y_value),
+                    ([d]) => (ascending ? d.y_value : -d.y_value),
                     (d) => d.x_label
                 )
             )

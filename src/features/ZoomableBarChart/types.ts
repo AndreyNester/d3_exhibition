@@ -1,5 +1,6 @@
 import { SVGProps } from "react"
 import { Pryttifier } from "../../shared/lib/Prettifier"
+
 enum EAbc {
     A = "A",
     B = "B",
@@ -28,13 +29,16 @@ enum EAbc {
     Z = "Z",
     U = "U",
 }
+interface IMockData {
+    letter: EAbc
+    frequency: number
+}
 
 interface IData {
     x_label: string
     y_value: number
 }
-
-interface IBarChartProps extends SVGProps<SVGSVGElement> {
+interface IZoomableBarChartProps extends SVGProps<SVGSVGElement> {
     data: Pryttifier<IData>[]
     ascending?: boolean
     colorOfRectangle?: string
@@ -45,10 +49,6 @@ interface IBarChartProps extends SVGProps<SVGSVGElement> {
     marginBottom?: number
     marginLeft?: number
 }
-interface IMockData {
-    letter: EAbc
-    frequency: number
-}
 
-export type { IBarChartProps, IMockData, IData }
+export type { IMockData, IData, IZoomableBarChartProps }
 export { EAbc }
