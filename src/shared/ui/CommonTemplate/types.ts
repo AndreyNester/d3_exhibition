@@ -1,7 +1,7 @@
-import { DetailedHTMLProps, HTMLAttributes } from "react";
+import { DetailedHTMLProps, HTMLAttributes } from "react"
 
-interface ICommonTemplateProps extends DetailedHTMLProps<HTMLAttributes<HTMLElement>, HTMLElement>{
-  title: string
+interface ICommonTemplateProps extends DetailedHTMLProps<HTMLAttributes<HTMLElement>, HTMLElement> {
+    title: string
 }
 
 export type { ICommonTemplateProps }
