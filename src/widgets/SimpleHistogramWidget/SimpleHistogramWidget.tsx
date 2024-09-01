@@ -7,8 +7,8 @@ import styles from "./SimpleHistogramWidget.module.css"
 import { mockData } from "./mockData"
 import { transformMockDatToHistogramData } from "./utils/transformMockDatToHistogramData"
 
-export const HistogramWidget = ({ className }: IHistogramWidgetProps): ReactNode => {
-    const classnameForWrapper: string = classNamesConstructor(styles.histogramWidget, {
+export const SimpleHistogramWidget = ({ className }: IHistogramWidgetProps): ReactNode => {
+    const classnameForWrapper: string = classNamesConstructor(styles.simpleHistogramWidget, {
         [String(className)]: className,
     })
     return (
