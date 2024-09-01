@@ -5,8 +5,8 @@ interface IMockData {
     rate: number
 }
 
-interface IHistogramWidgetProps {
+interface ISimpleHistogramWidgetProps {
     className?: string
 }
 
-export type { IHistogramWidgetProps, IMockData }
+export type { ISimpleHistogramWidgetProps, IMockData }

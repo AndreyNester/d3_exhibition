@@ -3,6 +3,7 @@ import styles from "./App.module.css"
 import { ChartBarWidget } from "./widgets/ChartBarWidget/ChartBarWidget"
 import { ZoomableBarChartWidget } from "./widgets/ZoomableBarChartWidget/ZoomableBarChartWidget"
 import { SimpleHistogramWidget } from "./widgets/SimpleHistogramWidget/SimpleHistogramWidget"
+import { MainHistogramWidget } from "./widgets/MainHistogramWidget/MainHistogramWidget"
 
 function App(): ReactNode {
     return (
@@ -10,6 +11,7 @@ function App(): ReactNode {
             <ChartBarWidget />
             <ZoomableBarChartWidget />
             <SimpleHistogramWidget />
+            <MainHistogramWidget />
         </div>
     )
 }
