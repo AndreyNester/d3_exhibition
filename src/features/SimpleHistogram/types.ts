@@ -3,7 +3,6 @@ import { Pryttifier } from "../../shared/lib/Prettifier"
 
 interface IData {
     x_range: number
-    y_value?: number
 }
 
 interface ISimpleHistogramHistogramProps extends SVGProps<SVGSVGElement> {
